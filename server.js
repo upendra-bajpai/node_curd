@@ -18,7 +18,7 @@ mongoose.connect(dbConfig.url,{
 	process.exit();
 })
 
- 
+ app.set("view engine","ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
