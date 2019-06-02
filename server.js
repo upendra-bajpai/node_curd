@@ -14,7 +14,7 @@ mongoose.connect(dbConfig.url,{
 }).then(()=>{
 	console.log("coonected")
 }).catch(err=>{
-	console.log("exception")
+	console.log("exception"+err)
 	process.exit();
 })
 
